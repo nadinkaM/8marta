@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подаришь мне Iphone 15 Pro Max?</title>
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+    background-image: url('Дизайн без названия.png'); /* Для мобильных устройств */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url('Дизайн без названия.png'); /* Для планшетов */
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-image: url('Дизайн без названия.png'); /* Для настольных компьютеров */
+    }
+
+        }
+        .gif-animation {
+            width: 40vw; /* Относительная ширина */
+            height: auto; /* Автоматическая высота */
+            max-width: 1020px; /* Максимальная ширина */
+            max-height: 1080px; /* Максимальная высота */
+        }
+        p {
+            font-size: 4vw; /* Относительный размер текста */
+            margin-bottom: 2vw; /* Относительный отступ */
+        }
+        .buttons {
+            display: flex;
+            gap: 2vw; /* Относительный зазор */
+            margin-top: 2vw; /* Относительный отступ сверху */
+        }
+        .button {
+            padding: 4vw 3vw; /* Относительные отступы */
+            border: none;
+            border-radius: 50%; /* Относительный радиус закругления углов */
+            font-size: 3vw; /* Относительный размер текста */
+            cursor: pointer;
+        }
+        .button-yes {
+            background-color: #FCA7BB;
+        }
+        .button-no {
+            background-color: #FCA7BB;
+        }
+    </style>
+</head>
+<body>
+    <img class="gif-animation" src="1.gif" alt="Gif Animation">
+    <p>Подаришь мне Iphone 15 Pro Max на 8 марта?;)</p>
+    <div class="buttons">
+        <button class="button button-yes" onclick="openNewPage()">Да</button>
+        <button class="button button-no" onmouseover="flyAway()">Нет</button>
+    </div>
+
+    <script>
+      function flyAway() {
+    const noButton = document.querySelector('.button-no');
+    const randomX = Math.random() * (window.innerWidth - noButton.clientWidth);
+    const randomY = Math.random() * (window.innerHeight - noButton.clientHeight);
+    noButton.style.position = "absolute"; // Добавляем позиционирование абсолютное
+    noButton.style.left = `${randomX}px`; // Задаем случайное положение по горизонтали
+    noButton.style.top = `${randomY}px`; // Задаем случайное положение по вертикали
+      }
+        function openNewPage() {
+            window.open('new_page.html', '_blank');
+        }
+    </script>
+</body>
+</html>

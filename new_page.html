@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ах, ты ж мой Сладкий!</title>
+    <style>
+               body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+    background-image: url('Дизайн без названия.png'); /* Для мобильных устройств */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url('Дизайн без названия.png'); /* Для планшетов */
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-image: url('Дизайн без названия.png'); /* Для настольных компьютеров */
+    }
+
+        }
+        .gif-animation {
+            width: 50vw; /* Используем относительную ширину */
+            max-width: 1020px; /* Устанавливаем максимальную ширину */
+            height: auto; /* Автоматически подстраиваем высоту */
+        }
+        h1 {
+            font-size: 5vw; /* Используем относительный размер шрифта */
+            margin-bottom: 2vw; /* Используем относительные отступы */
+        }
+        p {
+            font-size: 5vw; /* Используем относительный размер шрифта */
+            margin-bottom: 2vw; /* Используем относительные отступы */
+        }
+        .buttons {
+            display: flex;
+            gap: 2vw; /* Используем относительный отступ между кнопками */
+            margin-top: 2vw; /* Используем относительный отступ сверху */
+        }
+        .button {
+            padding: 10vw 6vw; /* Используем относительные размеры кнопок */
+            border: none;
+            border-radius: 5vw; /* Используем относительный радиус закругления углов */
+            font-size: 4vw; /* Используем относительный размер текста на кнопках */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ах, ты ж мой Сладкий!</h1>
+    <img class="gif-animation" src="2.gif" alt="Gif Animation">
+    <p>УРАААААААААААА!!!!!!</p>
+    <script>
+        function openNewPage() {
+            window.open('new_page.html', '_blank');
+        }
+    </script>
+</body>
+</html>
